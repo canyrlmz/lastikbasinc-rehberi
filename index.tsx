@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
+import './index.css'; // BURAYA EKLE (Dosyanın src veya root dizininde olduğunu varsayıyorum)
 
 const rootElement = document.getElementById('root');
 if (!rootElement) {
