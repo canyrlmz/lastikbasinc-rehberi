@@ -1,14 +1,13 @@
 // vite.config.ts
-import path from 'path';
 import { defineConfig, loadEnv } from 'vite';
 import react from '@vitejs/plugin-react';
+import path from 'path';
 
 export default defineConfig(({ mode }) => {
     const env = loadEnv(mode, '.', '');
     return {
-      // BURAYI EKLE: Repo adın neyse birebir aynısı olmalı (başında ve sonunda / ile)
+      // DİKKAT: Burası senin repo adınla BİREBİR AYNI olmalı
       base: '/lastikbasinc-rehberi/', 
-      
       server: {
         port: 3000,
         host: '0.0.0.0',
